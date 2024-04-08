@@ -80,3 +80,12 @@ console.log(`Nome e local: ${usuario.nome}, ${usuario.local}`)
 //COM desestruturação
 let{nome,local} = usuario;
 console.log(`Nome e Local: ${nome}, ${local}`)
+
+//ARROW Function
+let itens = ["fusca", "belina", "gurgel", "brasilia", "kombi"];
+itens.forEach(function(item){
+    console.log(item)
+})
+
+let itens1 = ["fusca-1", "belina-1", "gurgel-1", "brasilia-1", "kombi-1"];
+itens1.forEach(item1 => console.log(item1))
