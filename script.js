@@ -38,5 +38,17 @@ while(listaNumeros[i] <10){
     i++;
 }*/
 
-console.log(pares)
-console.log(impares)
+console.log(pares);
+console.log(impares);
+
+/*COM UMA LISTA DE ALUNOS (OBJETO)  VAMOS PERCORRER CADA ALUNO E TRAER A MEDIA DA NOTA E MOSTRA O NOME DO ALUNO E SUA MEDIA*/ 
+
+const listaAlunos = [
+    {nome:"Huguinho",nota:[5,7]},
+    {nome:"Zezinho", nota:[6,9]},
+    {nome: "Luizinho", nota: [7,8]}
+]
+for(aluno of listaAlunos){
+    let media = ((aluno.nota[0]+aluno.nota[1])/2);
+    console.log(`A media do aluno ${aluno.nome} é ${media}`)
+}
